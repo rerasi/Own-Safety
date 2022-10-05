@@ -16,8 +16,3 @@ it is simple to implement,easy to understand.
 - Contacts: Users can add multiple contacts to send SOS.
 - Tutorial: Users can view self-Defence video tutorials.
 - Helplines: Contact nearest police stations, hospitals, fire brigade, pharmacies, etc.
-
-#### Prerequisites :
-
-- Android Studio
-- Android Phone
