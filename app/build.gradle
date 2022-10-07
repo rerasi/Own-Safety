@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.darkness.sparkwomen"
+        applicationId 'com.rezwanur.ownsafety'
         minSdkVersion 24
         targetSdkVersion 31
         versionCode 1
