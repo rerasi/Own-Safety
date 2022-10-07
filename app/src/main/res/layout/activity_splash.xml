@@ -32,7 +32,7 @@
         android:layout_height="700px"
         android:layout_centerVertical="true"
         android:paddingStart="30dp"
-        android:src="@drawable/girl"
+        android:src="@drawable/ic_girl"
         android:id="@+id/sparkImg"
         android:layout_centerHorizontal="true"
         />
