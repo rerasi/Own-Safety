@@ -1,5 +1,5 @@
 
-package com.darkness.sparkwomen;
+package com.rezwanur.ownsafety;
 
 import android.Manifest;
 import android.app.Notification;
@@ -52,7 +52,7 @@ public class ServiceMine extends Service {
 
         super.onCreate();
 
-        mediaPlayer = MediaPlayer.create(getBaseContext(),R.raw.siren);
+        mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.siren);
         mediaPlayer.setLooping(true);
 
 

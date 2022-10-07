@@ -1,4 +1,4 @@
-package com.darkness.sparkwomen;
+package com.rezwanur.ownsafety;
 
 public class LawModel {
     String lawString, lawDescription;

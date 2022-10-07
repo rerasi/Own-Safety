@@ -1,4 +1,4 @@
-package com.darkness.sparkwomen;
+package com.rezwanur.ownsafety;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -20,7 +20,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MyView
     ArrayList<String> send;
     MyOnClickListener myOnClickListener;
 
-    ContactsAdapter(Context context, ArrayList<String> send,MyOnClickListener myOnClickListener){
+    ContactsAdapter(Context context, ArrayList<String> send, MyOnClickListener myOnClickListener){
         this.send = send;
         this.context = context;
         this.myOnClickListener = myOnClickListener;

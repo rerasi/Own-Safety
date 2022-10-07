@@ -1,18 +1,18 @@
-package com.darkness.sparkwomen;
+package com.rezwanur.ownsafety;
+
+import android.content.Intent;
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
-import android.os.Bundle;
 
 public class LawsActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(LawsActivity.this,MainActivity.class));
+        startActivity(new Intent(LawsActivity.this, MainActivity.class));
         LawsActivity.this.finish();
     }
 
@@ -24,7 +24,7 @@ public class LawsActivity extends AppCompatActivity {
         String[] laws = new String[]{"The Prohibition of Child Marriage Act, 2006","Special Marriage Act, 1954","Dowry Prohibition Act, 1961","Indian Divorce Act, 1969","Maternity Benefit Act,1861","Medical Termination of Pregnancy Act,1971","Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redress) Act, 2013","Indecent Representation of Women(Prevention) Act,1986","National Commission for Women Act, 1990","Equal Remuneration Act, 1976"};
 
         MyAdapter adapter = new MyAdapter(this, laws, position -> {
-            Intent intent = new Intent(LawsActivity.this,LawDisplayerActivity.class);
+            Intent intent = new Intent(LawsActivity.this, LawDisplayerActivity.class);
             intent.putExtra("position",position);
             startActivity(intent);
         });
@@ -35,7 +35,7 @@ public class LawsActivity extends AppCompatActivity {
 
 
         findViewById(R.id.backBtn).setOnClickListener(view -> {
-            startActivity(new Intent(LawsActivity.this,MainActivity.class));
+            startActivity(new Intent(LawsActivity.this, MainActivity.class));
             LawsActivity.this.finish();
         });
     }

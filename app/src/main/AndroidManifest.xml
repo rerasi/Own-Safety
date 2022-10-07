@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.darkness.sparkwomen">
+    package="com.rezwanur.ownsafety">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -19,21 +19,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OwnSafety">
-        <activity android:name="com.darkness.sparkwomen.SmsActivity"></activity>
-        <activity android:name="com.darkness.sparkwomen.MainActivity" />
-        <activity android:name="com.darkness.sparkwomen.SplashActivity" android:exported="true">
+        <activity android:name="com.rezwanur.ownsafety.SmsActivity"></activity>
+        <activity android:name="com.rezwanur.ownsafety.MainActivity" />
+        <activity android:name="com.rezwanur.ownsafety.SplashActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.darkness.sparkwomen.LawDisplayerActivity" />
-        <activity android:name="com.darkness.sparkwomen.LawsActivity" />
-        <activity android:name="com.darkness.sparkwomen.ContactActivity" />
+        <activity android:name="com.rezwanur.ownsafety.LawDisplayerActivity" />
+        <activity android:name="com.rezwanur.ownsafety.LawsActivity" />
+        <activity android:name="com.rezwanur.ownsafety.ContactActivity" />
         <activity android:name=".SelfDefenseActivity" />
 
-        <service android:name="com.darkness.sparkwomen.ServiceMine" />
+        <service android:name="com.rezwanur.ownsafety.ServiceMine" />
     </application>
 
 </manifest>

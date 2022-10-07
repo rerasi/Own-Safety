@@ -1,4 +1,4 @@
-package com.darkness.sparkwomen;
+package com.rezwanur.ownsafety;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -16,7 +16,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
    Context context;
    MyOnClickListener myOnClickListener;
 
-    public MyAdapter(Context context, String[] laws,MyOnClickListener onClickListener){
+    public MyAdapter(Context context, String[] laws, MyOnClickListener onClickListener){
         this.laws = laws;
         this.context = context;
         this.myOnClickListener = onClickListener;

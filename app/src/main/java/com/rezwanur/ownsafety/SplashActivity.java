@@ -1,7 +1,4 @@
-package com.darkness.sparkwomen;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
+package com.rezwanur.ownsafety;
 
 import android.Manifest;
 import android.content.Intent;
@@ -9,6 +6,9 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
         requestPermission();
         findViewById(R.id.btnGetStarted).setOnClickListener(view -> {
             if(isAllPermissionsGranted){
-                startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                startActivity(new Intent(SplashActivity.this, MainActivity.class));
                 SplashActivity.this.finish();
             }else {
                 Toast.makeText(this, "Please grant required permissions!", Toast.LENGTH_SHORT).show();
@@ -70,10 +70,10 @@ public class SplashActivity extends AppCompatActivity {
 
 
     void requestLocation(){
-        LocationRequest mLocationRequest = com.google.android.gms.location.LocationRequest.create();
+        LocationRequest mLocationRequest = LocationRequest.create();
         mLocationRequest.setInterval(60000);
         mLocationRequest.setFastestInterval(5000);
-        mLocationRequest.setPriority(com.google.android.gms.location.LocationRequest.PRIORITY_HIGH_ACCURACY);
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         LocationCallback mLocationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(LocationResult locationResult) {
