@@ -8,53 +8,51 @@
 
 
     <View
-        android:layout_marginStart="-20dp"
-        android:layout_marginTop="-30dp"
+        android:id="@+id/topleftoval"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/topleftoval"
-        android:background="@drawable/top_left_corner_oval"/>
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/top_left_corner_oval" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Spark Women"
+        android:text="Own Safety"
         android:textSize="45sp"
         android:layout_centerHorizontal="true"
-        android:textColor="#803A99"
+        android:textColor="#00563B"
         android:textStyle="bold"
         android:layout_above="@id/sparkImg"
         android:id="@+id/sparkText"
         android:fontFamily="cursive"/>
 
     <ImageView
+        android:id="@+id/sparkImg"
         android:layout_width="600px"
         android:layout_height="700px"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:paddingStart="30dp"
-        android:src="@drawable/ic_girl"
-        android:id="@+id/sparkImg"
-        android:layout_centerHorizontal="true"
-        />
+        android:src="@drawable/ic_girl" />
 
     <TextView
+        android:id="@+id/slang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/slang"
         android:layout_below="@id/sparkImg"
+        android:layout_centerHorizontal="true"
         android:text="Safety fits like a glove ; Try one on"
-        android:textColor="@color/black"
-        android:layout_centerHorizontal="true"/>
+        android:textColor="@color/black" />
 
 
     <Button
+        android:id="@+id/btnGetStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="get started"
+        android:layout_below="@id/slang"
         android:layout_centerHorizontal="true"
-        android:id="@+id/btnGetStarted"
         android:layout_marginTop="40px"
-        android:layout_below="@id/slang"/>
+        android:text="get started" />
 
 
 
