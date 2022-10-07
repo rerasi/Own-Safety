@@ -1,4 +1,4 @@
-# Own Safety App - A Women Safety Application
+# Own Safety App - A Own Safety Application
 ## _Feel Safe Everywhere_
 
 
