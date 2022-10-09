@@ -31,22 +31,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         findViewById(R.id.panicBtn).setOnClickListener(this);
-        findViewById(R.id.fourth).setOnClickListener(this);
+        findViewById(R.id.third).setOnClickListener(this);
         findViewById(R.id.first).setOnClickListener(this);
         findViewById(R.id.second).setOnClickListener(this);
-        findViewById(R.id.fifth).setOnClickListener(this);
+        findViewById(R.id.fourth).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if (id == R.id.fourth) {
+        if (id == R.id.third) {
             startActivity(new Intent(MainActivity.this, LawsActivity.class));
             MainActivity.this.finish();
         }else if(id == R.id.first){
             startActivity(new Intent(MainActivity.this, ContactActivity.class));
             MainActivity.this.finish();
-        }else if(id == R.id.fifth){
+        }else if(id == R.id.fourth){
             startActivity(new Intent(MainActivity.this, SelfDefenseActivity.class));
         } else if(id == R.id.second){
             startActivity(new Intent(MainActivity.this, SmsActivity.class));

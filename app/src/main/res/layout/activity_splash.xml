@@ -7,15 +7,6 @@
     android:background="@drawable/bg_tex"
     tools:context=".SplashActivity">
 
-
-<!--    <View-->
-<!--        android:id="@+id/topleftoval"-->
-<!--        android:layout_width="150dp"-->
-<!--        android:layout_height="150dp"-->
-<!--        android:layout_marginStart="-20dp"-->
-<!--        android:layout_marginTop="-30dp"-->
-<!--        android:background="@drawable/top_left_corner_oval" />-->
-
     <TextView
         android:id="@+id/sparkText"
         android:layout_width="wrap_content"
@@ -39,7 +30,6 @@
         android:src="@drawable/ic_splash_img"
         tools:ignore="HardcodedText,RtlSymmetry" />
 
-
     <Button
         android:id="@+id/btnGetStarted"
         android:layout_width="match_parent"
@@ -57,7 +47,5 @@
         android:textSize="18sp"
         app:backgroundTint="@color/blue"
         tools:ignore="HardcodedText" />
-
-
 
 </RelativeLayout>
