@@ -17,7 +17,6 @@
         android:text="Own Safety"
         android:textColor="#00563B"
         android:textSize="50sp"
-        android:textStyle="bold"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -101,17 +100,33 @@
         tools:ignore="HardcodedText" />
 
 
-    <com.google.android.material.button.MaterialButton
+    <LinearLayout
         android:id="@+id/panicBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/fourth"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="50dp"
-        android:backgroundTint="#FF69B4"
-        android:text="PANIC"
-        android:textSize="18sp"
-        app:cornerRadius="100dp" />
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/alert"
+        android:orientation="horizontal"
+        app:backgroundTintMode="add" />
+
+
+<!--    <Button-->
+<!--        android:id="@+id/panicBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="170dp"-->
+<!--        android:layout_below="@id/fourth"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:background="@drawable/btn_gra"-->
+<!--        android:text="PANIC"-->
+<!--        android:textSize="22sp"-->
+<!--        app:cornerRadius="10dp" />-->
 
 
 </RelativeLayout>
