@@ -34,6 +34,9 @@
         <activity android:name=".SelfDefenseActivity" />
 
         <service android:name="com.rezwanur.ownsafety.ServiceMine" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

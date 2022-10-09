@@ -16,24 +16,24 @@
         android:background="@drawable/top_left_corner_oval" />
 
     <TextView
+        android:id="@+id/sparkText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Own Safety"
-        android:textSize="45sp"
-        android:layout_centerHorizontal="true"
-        android:textColor="#00563B"
-        android:textStyle="bold"
         android:layout_above="@id/sparkImg"
-        android:id="@+id/sparkText"
-        android:fontFamily="cursive"/>
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/courgette"
+        android:text="Own Safety"
+        android:textColor="#00563B"
+        android:textSize="45sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/sparkImg"
-        android:layout_width="600px"
-        android:layout_height="700px"
+        android:layout_width="1000px"
+        android:layout_height="1000px"
         android:layout_centerInParent="true"
         android:paddingStart="30dp"
-        android:src="@drawable/ic_girl" />
+        android:src="@drawable/ic_splash_img" />
 
     <TextView
         android:id="@+id/slang"
@@ -41,7 +41,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/sparkImg"
         android:layout_centerHorizontal="true"
-        android:text="Safety fits like a glove ; Try one on"
+        android:text="Zero compromises towards safety."
+        android:textSize="20sp"
         android:textColor="@color/black" />
 
 
@@ -51,8 +52,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/slang"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40px"
-        android:text="get started" />
+        android:layout_marginTop="60px"
+        android:text="get started"
+        android:textSize="14sp" />
 
 
 

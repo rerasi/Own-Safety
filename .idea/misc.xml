@@ -7,9 +7,12 @@
         <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/oval_purple_full.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/purple_background.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/settings.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/top_left_corner_oval.xml" value="0.2405" />
         <entry key="app/src/main/res/layout/activity_contact.xml" value="0.3890625" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
       </map>
     </option>
   </component>
