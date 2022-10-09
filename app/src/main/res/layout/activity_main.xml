@@ -8,56 +8,37 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/relativeLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
         android:fontFamily="@font/courgette"
         android:text="Own Safety"
+        android:textColor="#00563B"
         android:textSize="40sp"
+        android:layout_marginTop="40dp"
         tools:ignore="HardcodedText" />
 
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
-
-
-        <LinearLayout
-            android:id="@+id/first"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="50dp"
-            android:background="@drawable/button_hover"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:src="@drawable/contact" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Contact"
-                android:textColor="#ffffff"
-                android:textSize="24sp"
-                tools:ignore="HardcodedText" />
-
-        </LinearLayout>
+    <Button
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_hover"
+        android:text="contact"
+        android:textSize="22sp"
+        app:backgroundTint="@color/btn_gra"
+        app:backgroundTintMode="add"
+        app:icon="@drawable/ic_outline_perm_contact_calendar_24"
+        app:iconGravity="textStart"
+        app:iconSize="30dp"
+        tools:ignore="HardcodedText" />
 
         <LinearLayout
             android:id="@+id/second"
@@ -130,7 +111,8 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:src="@drawable/self_defence" />
+                android:src="@drawable/self_defence"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -140,19 +122,17 @@
         </LinearLayout>
 
 
-    </RelativeLayout>
-
     <com.google.android.material.button.MaterialButton
-        android:layout_marginTop="50dp"
-        app:cornerRadius="100dp"
-        android:layout_width="200dp"
-        android:backgroundTint="#FF69B4"
-        android:textSize="18sp"
-        android:layout_height="60dp"
         android:id="@+id/panicBtn"
-        android:text="PANIC"
+        android:layout_below="@id/fourth"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/relativeLayout"/>
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF69B4"
+        android:text="PANIC"
+        android:textSize="18sp"
+        app:cornerRadius="100dp" />
 
 
 </RelativeLayout>
