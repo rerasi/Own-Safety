@@ -12,13 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/courgette"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/pecita"
         android:text="Own Safety"
         android:textColor="#00563B"
-        android:textSize="40sp"
-        android:layout_marginTop="40dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
         tools:ignore="HardcodedText" />
-
 
     <Button
         android:id="@+id/first"
@@ -27,7 +27,7 @@
         android:layout_below="@id/title"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/button_hover"
@@ -40,86 +40,65 @@
         app:iconSize="30dp"
         tools:ignore="HardcodedText" />
 
-        <LinearLayout
-            android:id="@+id/second"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/first"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/oval_purple_full"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:orientation="horizontal">
+    <Button
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/first"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_hover"
+        android:text="SMS Alert"
+        android:textSize="22sp"
+        app:backgroundTint="@color/btn_gra"
+        app:backgroundTintMode="add"
+        app:icon="@drawable/ic_outline_perm_contact_calendar_24"
+        app:iconGravity="textStart"
+        app:iconSize="30dp"
+        tools:ignore="HardcodedText" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_baseline_message_24" />
+    <Button
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/second"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_hover"
+        android:text="Basic Law"
+        android:textSize="22sp"
+        app:backgroundTint="@color/btn_gra"
+        app:backgroundTintMode="add"
+        app:icon="@drawable/ic_outline_perm_contact_calendar_24"
+        app:iconGravity="textStart"
+        app:iconSize="30dp"
+        tools:ignore="HardcodedText" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="SMS Alert" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/third"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/second"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/oval_purple_full"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:src="@drawable/law_image" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Basic Laws"
-                tools:ignore="HardcodedText" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/fourth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/third"
-            android:layout_marginTop="50dp"
-
-            android:background="@drawable/oval_purple_full"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:src="@drawable/self_defence"
-                tools:ignore="ImageContrastCheck" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Self Defence" />
-        </LinearLayout>
+    <Button
+        android:id="@+id/fourth"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/third"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_hover"
+        android:text="Self Defence"
+        android:textSize="22sp"
+        app:backgroundTint="@color/btn_gra"
+        app:backgroundTintMode="add"
+        app:icon="@drawable/ic_outline_perm_contact_calendar_24"
+        app:iconGravity="textStart"
+        app:iconSize="30dp"
+        tools:ignore="HardcodedText" />
 
 
     <com.google.android.material.button.MaterialButton
