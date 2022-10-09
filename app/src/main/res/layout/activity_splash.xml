@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_tex"
     tools:context=".SplashActivity">
 
 
-    <View
-        android:id="@+id/topleftoval"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="-20dp"
-        android:layout_marginTop="-30dp"
-        android:background="@drawable/top_left_corner_oval" />
+<!--    <View-->
+<!--        android:id="@+id/topleftoval"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginStart="-20dp"-->
+<!--        android:layout_marginTop="-30dp"-->
+<!--        android:background="@drawable/top_left_corner_oval" />-->
 
     <TextView
         android:id="@+id/sparkText"
@@ -24,37 +25,38 @@
         android:fontFamily="@font/courgette"
         android:text="Own Safety"
         android:textColor="#00563B"
-        android:textSize="45sp"
-        android:textStyle="bold" />
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/sparkImg"
-        android:layout_width="1000px"
-        android:layout_height="1000px"
+        android:layout_width="match_parent"
+        android:layout_height="653dp"
         android:layout_centerInParent="true"
+        android:contentDescription="splash image"
         android:paddingStart="30dp"
-        android:src="@drawable/ic_splash_img" />
-
-    <TextView
-        android:id="@+id/slang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/sparkImg"
-        android:layout_centerHorizontal="true"
-        android:text="Zero compromises towards safety."
-        android:textSize="20sp"
-        android:textColor="@color/black" />
+        android:src="@drawable/ic_splash_img"
+        tools:ignore="HardcodedText,RtlSymmetry" />
 
 
     <Button
         android:id="@+id/btnGetStarted"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/slang"
+        android:layout_below="@id/sparkImg"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60px"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="60dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:text="get started"
-        android:textSize="14sp" />
+        android:textSize="18sp"
+        app:backgroundTint="@color/blue"
+        tools:ignore="HardcodedText" />
 
 
 
