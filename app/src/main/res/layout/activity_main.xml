@@ -34,7 +34,7 @@
         android:textSize="22sp"
         app:backgroundTint="@color/btn_gra"
         app:backgroundTintMode="add"
-        app:icon="@drawable/ic_outline_perm_contact_calendar_24"
+        app:icon="@drawable/ic_contact"
         app:iconGravity="textStart"
         app:iconSize="30dp"
         tools:ignore="HardcodedText" />
@@ -54,7 +54,7 @@
         android:textSize="22sp"
         app:backgroundTint="@color/btn_gra"
         app:backgroundTintMode="add"
-        app:icon="@drawable/ic_outline_perm_contact_calendar_24"
+        app:icon="@drawable/ic_chat"
         app:iconGravity="textStart"
         app:iconSize="30dp"
         tools:ignore="HardcodedText" />
@@ -74,7 +74,7 @@
         android:textSize="22sp"
         app:backgroundTint="@color/btn_gra"
         app:backgroundTintMode="add"
-        app:icon="@drawable/ic_outline_perm_contact_calendar_24"
+        app:icon="@drawable/ic_law"
         app:iconGravity="textStart"
         app:iconSize="30dp"
         tools:ignore="HardcodedText" />
@@ -94,7 +94,7 @@
         android:textSize="22sp"
         app:backgroundTint="@color/btn_gra"
         app:backgroundTintMode="add"
-        app:icon="@drawable/ic_outline_perm_contact_calendar_24"
+        app:icon="@drawable/ic_self_defence"
         app:iconGravity="textStart"
         app:iconSize="30dp"
         tools:ignore="HardcodedText" />
