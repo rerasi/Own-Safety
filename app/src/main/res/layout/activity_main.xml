@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_tex"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
@@ -26,14 +26,14 @@
         android:layout_below="@id/title"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="250dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/button_hover"
         android:text="contact"
         android:textSize="22sp"
-        app:backgroundTint="@color/btn_gra"
-        app:backgroundTintMode="add"
+        app:backgroundTint="@color/blue"
+        app:backgroundTintMode="src_in"
         app:icon="@drawable/ic_contact"
         app:iconGravity="textStart"
         app:iconSize="30dp"
@@ -52,14 +52,14 @@
         android:background="@drawable/button_hover"
         android:text="SMS Alert"
         android:textSize="22sp"
-        app:backgroundTint="@color/btn_gra"
-        app:backgroundTintMode="add"
+        app:backgroundTint="@color/blue"
+        app:backgroundTintMode="src_in"
         app:icon="@drawable/ic_chat"
         app:iconGravity="textStart"
         app:iconSize="30dp"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
-    <Button
+    <!--<Button
         android:id="@+id/third"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -77,56 +77,56 @@
         app:icon="@drawable/ic_law"
         app:iconGravity="textStart"
         app:iconSize="30dp"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        tools:ignore="HardcodedText,TextContrastCheck" />-->
 
-    <Button
-        android:id="@+id/fourth"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/third"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/button_hover"
-        android:text="Self Defence"
-        android:textSize="22sp"
-        app:backgroundTint="@color/btn_gra"
-        app:backgroundTintMode="add"
-        app:icon="@drawable/ic_self_defence"
-        app:iconGravity="textStart"
-        app:iconSize="30dp"
-        tools:ignore="HardcodedText,TextContrastCheck" />
-
-
-    <LinearLayout
-        android:id="@+id/panicBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/fourth"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/alert"
-        android:orientation="horizontal"
-        app:backgroundTintMode="add" />
+    <!--    <Button-->
+    <!--        android:id="@+id/fourth"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="80dp"-->
+    <!--        android:layout_below="@id/third"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginEnd="40dp"-->
+    <!--        android:layout_marginBottom="40dp"-->
+    <!--        android:background="@drawable/button_hover"-->
+    <!--        android:text="Self Defence"-->
+    <!--        android:textSize="22sp"-->
+    <!--        app:backgroundTint="@color/btn_gra"-->
+    <!--        app:backgroundTintMode="add"-->
+    <!--        app:icon="@drawable/ic_self_defence"-->
+    <!--        app:iconGravity="textStart"-->
+    <!--        app:iconSize="30dp"-->
+    <!--        tools:ignore="HardcodedText,TextContrastCheck" />-->
 
 
-<!--    <Button-->
-<!--        android:id="@+id/panicBtn"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="170dp"-->
-<!--        android:layout_below="@id/fourth"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginStart="40dp"-->
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:layout_marginEnd="40dp"-->
-<!--        android:background="@drawable/btn_gra"-->
-<!--        android:text="PANIC"-->
-<!--        android:textSize="22sp"-->
-<!--        app:cornerRadius="10dp" />-->
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/panicBtn"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/fourth"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_marginEnd="40dp"-->
+    <!--        android:layout_marginBottom="80dp"-->
+    <!--        android:background="@drawable/alert"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:backgroundTintMode="add" />-->
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/panicBtn"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="170dp"-->
+    <!--        android:layout_below="@id/fourth"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_marginEnd="40dp"-->
+    <!--        android:background="@drawable/btn_gra"-->
+    <!--        android:text="PANIC"-->
+    <!--        android:textSize="22sp"-->
+    <!--        app:cornerRadius="10dp" />-->
 
 
 </RelativeLayout>

@@ -20,8 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OwnSafety">
         <activity android:name="com.rezwanur.ownsafety.SmsActivity"></activity>
-        <activity android:name="com.rezwanur.ownsafety.MainActivity" />
-        <activity android:name="com.rezwanur.ownsafety.SplashActivity" android:exported="true">
+        <activity android:name="com.rezwanur.ownsafety.MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
