@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_tex"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,31 +12,89 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/pecita"
         android:text="Own Safety"
         android:textColor="#00563B"
-        android:textSize="50sp"
+        android:textSize="46sp"
         tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@id/title"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/gray"
+        android:text="contact"
+        android:textSize="22sp"
+        app:backgroundTint="@color/gray"
+        app:backgroundTintMode="src_over"
+        app:icon="@drawable/ic_contact"
+        app:iconGravity="textStart"
+        app:iconSize="30dp"
+        tools:ignore="HardcodedText,TextContrastCheck">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1"
+            android:text="Safety in Hand!"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_below="@id/textView"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1"
+            android:text="Safety in Hand!"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="191dp"
+            android:layout_height="91dp"
+            android:layout_centerv="true"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/banner" />
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/first"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_below="@id/title"
+        android:layout_height="65dp"
+        android:layout_below="@id/cover"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/button_hover"
-        android:text="contact"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_border"
+        android:gravity="start|center_vertical"
+        android:text="Add Contact"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
         android:textSize="22sp"
-        app:backgroundTint="@color/btn_gra"
+        app:backgroundTint="@android:color/transparent"
         app:backgroundTintMode="add"
-        app:icon="@drawable/ic_contact"
+
         app:iconGravity="textStart"
         app:iconSize="30dp"
+        app:iconTint="@color/gray"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
     <Button
@@ -51,6 +109,7 @@
         android:layout_marginBottom="40dp"
         android:background="@drawable/button_hover"
         android:text="SMS Alert"
+        android:textAllCaps="false"
         android:textSize="22sp"
         app:backgroundTint="@color/btn_gra"
         app:backgroundTintMode="add"
@@ -71,6 +130,7 @@
         android:layout_marginBottom="40dp"
         android:background="@drawable/button_hover"
         android:text="Basic Law"
+        android:textAllCaps="false"
         android:textSize="22sp"
         app:backgroundTint="@color/btn_gra"
         app:backgroundTintMode="add"
@@ -91,6 +151,7 @@
         android:layout_marginBottom="40dp"
         android:background="@drawable/button_hover"
         android:text="Self Defence"
+        android:textAllCaps="false"
         android:textSize="22sp"
         app:backgroundTint="@color/btn_gra"
         app:backgroundTintMode="add"
@@ -114,7 +175,7 @@
         app:backgroundTintMode="add" />
 
 
-<!--    <Button-->
+    <!--    <Button-->
 <!--        android:id="@+id/panicBtn"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="170dp"-->
