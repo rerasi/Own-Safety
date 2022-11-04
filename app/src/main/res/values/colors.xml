@@ -14,5 +14,6 @@
     <color name="ico_gray">#9BAEB8</color>
     <color name="border">#F0F3F5</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="alert_bg">#2A4173</color>
 
 </resources>

@@ -10,6 +10,9 @@
     <string name="function_4">Self Defence</string>
     <string name="function_5">Emergency Numbers</string>
 
+    <string name="alert_title">Denger Alert!</string>
+    <string name="alert_text">Are you in danger? Please press the call button.</string>
+
     <array name="lawsBig">
 
         <item>According to the International Research Centre for Women, almost 47 percent of girls

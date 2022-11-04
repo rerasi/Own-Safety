@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="@color/white"
     tools:context=".MainActivity">
 
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/rounded_corner1"
         app:backgroundTint="@color/gray"
@@ -145,53 +145,70 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/fifth"
+
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/rounded_corner1"
-        app:backgroundTint="@color/gray"
-        app:backgroundTintMode="src_over">
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/alert_bg"
+        app:backgroundTint="@color/alert_bg"
+        app:backgroundTintMode="src_in">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
             android:layout_weight="1"
-            android:gravity="center_vertical"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView1"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/title"
-                android:textColor="@color/dark_blue"
-                android:textSize="30sp"
-                app:fontFamily="@font/poppins_semibold"
-                tools:ignore="HardcodedText" />
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="118dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/warning_alert" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/alert_title"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/sub_title"
-                android:textColor="@color/ico_gray"
-                android:textSize="20sp"
-                tools:ignore="HardcodedText" />
+                android:text="@string/alert_text"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
         </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="400dp"
-            android:layout_height="136dp"
-            android:layout_gravity="bottom"
+            android:layout_width="205dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:contentDescription="@illustrator"
-            app:srcCompat="@drawable/banner"
+            app:srcCompat="@drawable/call_btn"
             tools:ignore="ImageContrastCheck" />
     </LinearLayout>
 
@@ -211,18 +228,18 @@
 
 
     <!--    <Button-->
-<!--        android:id="@+id/panicBtn"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="170dp"-->
-<!--        android:layout_below="@id/fourth"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:layout_marginStart="40dp"-->
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:layout_marginEnd="40dp"-->
-<!--        android:background="@drawable/btn_gra"-->
-<!--        android:text="PANIC"-->
-<!--        android:textSize="22sp"-->
-<!--        app:cornerRadius="10dp" />-->
+    <!--        android:id="@+id/panicBtn"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="170dp"-->
+    <!--        android:layout_below="@id/fourth"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_marginEnd="40dp"-->
+    <!--        android:background="@drawable/btn_gra"-->
+    <!--        android:text="PANIC"-->
+    <!--        android:textSize="22sp"-->
+    <!--        app:cornerRadius="10dp" />-->
 
 
 </RelativeLayout>
