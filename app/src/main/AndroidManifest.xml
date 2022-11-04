@@ -18,9 +18,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OwnSafety">
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@drawable/button_border" />
 
         <activity android:name=".SmsActivity" />
         <activity android:name=".MainActivity" />

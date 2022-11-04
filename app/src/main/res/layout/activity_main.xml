@@ -64,10 +64,12 @@ be distracted."
             android:id="@+id/imageView2"
             android:layout_width="400dp"
             android:layout_height="152dp"
-            android:layout_marginEnd="20dp"
             android:layout_gravity="bottom"
+            android:layout_marginEnd="20dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/banner" />
+            android:contentDescription="@illustrator"
+            app:srcCompat="@drawable/banner"
+            tools:ignore="ImageContrastCheck" />
     </LinearLayout>
 
 
@@ -81,18 +83,22 @@ be distracted."
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="15dp"
-        android:background="@drawable/button_border"
+        android:background="@drawable/bg_btn"
         android:gravity="start|center_vertical"
+        android:insetLeft="5dp"
+        android:insetTop="8dp"
+        android:insetRight="5dp"
+        android:insetBottom="8dp"
         android:text="Add Contact"
         android:textAllCaps="false"
         android:textColor="@color/dark_blue"
         android:textSize="22sp"
-        app:backgroundTint="@android:color/transparent"
+        app:backgroundTint="@color/transparent"
         app:backgroundTintMode="add"
-
+        app:icon="@drawable/ic_sms"
         app:iconGravity="textStart"
         app:iconSize="30dp"
-        app:iconTint="@color/gray"
+        app:iconTint="@color/ico_gray"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
     <Button
