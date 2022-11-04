@@ -32,8 +32,9 @@
         <entry key="app/src/main/res/drawable/top_left_corner_oval.xml" value="0.2405" />
         <entry key="app/src/main/res/font/Pecita.xml" value="0.3433091064557503" />
         <entry key="app/src/main/res/font/courgette.xml" value="0.34416417272338606" />
+        <entry key="app/src/main/res/layout-v28/activity_main.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/activity_contact.xml" value="0.2424112868747328" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.75" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
       </map>
     </option>
@@ -43,7 +44,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.17184575065518531" />
+        <option name="scale" value="0.2953125" />
       </ProjectState>
     </option>
   </component>
