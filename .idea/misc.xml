@@ -8,20 +8,28 @@
         <entry key="app/src/main/res/drawable/button.xml" value="0.3" />
         <entry key="app/src/main/res/drawable/button_border.xml" value="0.2105" />
         <entry key="app/src/main/res/drawable/contact.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/ic_banner_bg_2.xml" value="0.336" />
         <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.211" />
         <entry key="app/src/main/res/drawable/ic_baseline_message_24.xml" value="0.231" />
         <entry key="app/src/main/res/drawable/ic_bg.xml" value="0.231" />
+        <entry key="app/src/main/res/drawable/ic_call.xml" value="0.211" />
         <entry key="app/src/main/res/drawable/ic_chat.xml" value="0.336" />
         <entry key="app/src/main/res/drawable/ic_contact.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/ic_emergency.xml" value="0.211" />
         <entry key="app/src/main/res/drawable/ic_girl.xml" value="0.336" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.231" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.211" />
         <entry key="app/src/main/res/drawable/ic_law.xml" value="0.336" />
         <entry key="app/src/main/res/drawable/ic_outline_chat_24.xml" value="0.231" />
         <entry key="app/src/main/res/drawable/ic_outline_gavel_24.xml" value="0.231" />
         <entry key="app/src/main/res/drawable/ic_outline_perm_contact_calendar_24.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/ic_police.xml" value="0.211" />
+        <entry key="app/src/main/res/drawable/ic_self_defence.xml" value="0.211" />
+        <entry key="app/src/main/res/drawable/ic_sms.xml" value="0.211" />
         <entry key="app/src/main/res/drawable/ic_splash_img.xml" value="0.245" />
         <entry key="app/src/main/res/drawable/oval_purple_full.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/purple_background.xml" value="0.2405" />
@@ -35,8 +43,11 @@
         <entry key="app/src/main/res/font/Pecita.xml" value="0.3433091064557503" />
         <entry key="app/src/main/res/font/courgette.xml" value="0.34416417272338606" />
         <entry key="app/src/main/res/layout-v28/activity_main.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/activity_contact.xml" value="0.2424112868747328" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/activity_contact.xml" value="0.31936725096194957" />
+        <entry key="app/src/main/res/layout/activity_law_displayer.xml" value="0.1671654553227875" />
+        <entry key="app/src/main/res/layout/activity_laws.xml" value="0.31936725096194957" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_sms.xml" value="0.31936725096194957" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
       </map>
     </option>

@@ -26,14 +26,14 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/rounded_corner1"
+        android:background="@drawable/banner_bg_3"
         app:backgroundTint="@color/gray"
         app:backgroundTintMode="src_over">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
             android:layout_weight="1"
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/cover"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Functions"
@@ -94,7 +94,7 @@
         android:id="@+id/first"
         style="@style/styles_btn"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="65dp"
         android:layout_below="@id/header"
         android:layout_centerHorizontal="true"
         android:text="@string/function_1"
@@ -104,7 +104,7 @@
         android:id="@+id/second"
         style="@style/styles_btn"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="65dp"
         android:layout_below="@id/first"
         android:layout_centerHorizontal="true"
         android:text="@string/function_2"
@@ -114,7 +114,7 @@
         android:id="@+id/third"
         style="@style/styles_btn"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="65dp"
         android:layout_below="@id/second"
         android:layout_centerHorizontal="true"
         android:text="@string/function_3"
@@ -124,7 +124,7 @@
         android:id="@+id/fourth"
         style="@style/styles_btn"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="65dp"
         android:layout_below="@id/third"
         android:layout_centerHorizontal="true"
         android:text="@string/function_4"
@@ -134,7 +134,7 @@
         android:id="@+id/fifth"
         style="@style/styles_btn"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="65dp"
         android:layout_below="@id/fourth"
         android:layout_centerHorizontal="true"
         android:text="@string/function_5"
@@ -142,25 +142,24 @@
 
     <LinearLayout
         android:id="@+id/panicBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="162dp"
         android:layout_below="@id/fifth"
 
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="40dp"
         android:background="@drawable/alert_bg"
         app:backgroundTint="@color/alert_bg"
         app:backgroundTintMode="src_in">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="427dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -202,8 +201,8 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="205dp"
-            android:layout_height="118dp"
+            android:layout_width="257dp"
+            android:layout_height="116dp"
             android:layout_gravity="center"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
@@ -211,35 +210,6 @@
             app:srcCompat="@drawable/call_btn"
             tools:ignore="ImageContrastCheck" />
     </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/panicBtn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/panicBtn"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/alert"
-        android:orientation="horizontal"
-        app:backgroundTintMode="add" />
-
-
-    <!--    <Button-->
-    <!--        android:id="@+id/panicBtn"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="170dp"-->
-    <!--        android:layout_below="@id/fourth"-->
-    <!--        android:layout_centerHorizontal="true"-->
-    <!--        android:layout_marginStart="40dp"-->
-    <!--        android:layout_marginTop="50dp"-->
-    <!--        android:layout_marginEnd="40dp"-->
-    <!--        android:background="@drawable/btn_gra"-->
-    <!--        android:text="PANIC"-->
-    <!--        android:textSize="22sp"-->
-    <!--        app:cornerRadius="10dp" />-->
 
 
 </RelativeLayout>

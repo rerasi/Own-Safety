@@ -4,13 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_tex"
+    android:background="@color/white"
     tools:context=".ContactActivity">
 
     <RelativeLayout
-        android:layout_above="@id/callingInfo"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <!--<LinearLayout
@@ -44,49 +42,105 @@
                 android:text="Fire brigade : 102" />
         </LinearLayout>-->
 
-    <TextView
+        <TextView
+            android:id="@+id/contactText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="Contact to send SOS "
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:icon="@drawable/ic_left" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="50dp"
-        android:id="@+id/contactText"
-        android:text="Contact to send SOS "
-        tools:ignore="HardcodedText" />
+        android:layout_above="@id/callingInfo"
+        android:layout_centerVertical="true">
+
+        <!--<LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emergency Contacts :" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Police : 100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Ambulance : 101" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Fire brigade : 102" />
+        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/contactText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="Contact to send SOS "
+            tools:ignore="HardcodedText" />
 
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_height="300dp"
             android:id="@+id/contacts"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/contactText"
             android:layout_marginHorizontal="50dp"
-            android:layout_below="@id/contactText"/>
+            android:layout_marginTop="10dp" />
 
 
     </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/callingInfo"
-        android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@id/bottomLayout"
-        android:gravity="center"
-        android:foregroundGravity="center"
         android:layout_toStartOf="@id/callingInfo"
-        android:layout_height="wrap_content">
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Call will be placed to following number :"/>
+            android:text="Call will be placed to following number :" />
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/callText"
-            android:text=""/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
 
 
     </LinearLayout>
