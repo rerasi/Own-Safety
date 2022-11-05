@@ -106,7 +106,7 @@
         android:layout_below="@id/first"
         android:layout_centerHorizontal="true"
         android:text="@string/function_2"
-        app:icon="@drawable/ic_call" />
+        app:icon="@drawable/ic_add_call" />
 
     <Button
         android:id="@+id/third"
@@ -143,7 +143,6 @@
         android:layout_width="wrap_content"
         android:layout_height="162dp"
         android:layout_below="@id/fifth"
-
         android:layout_marginStart="20dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
