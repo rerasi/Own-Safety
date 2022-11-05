@@ -86,8 +86,6 @@
         android:textAllCaps="false"
         android:textColor="@color/dark_blue"
         android:textSize="22sp"
-        app:backgroundTint="@color/transparent"
-        app:backgroundTintMode="add"
         tools:ignore="HardcodedText" />
 
     <Button

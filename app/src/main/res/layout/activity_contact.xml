@@ -7,6 +7,8 @@
     android:background="@color/white"
     tools:context=".ContactActivity">
 
+
+
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -43,29 +45,58 @@
     <LinearLayout
         android:id="@+id/cover"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/header"
-        android:layout_centerVertical="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/sms_bg"
-        android:orientation="vertical"
+        android:background="@drawable/banner_bg"
         app:backgroundTint="@color/gray"
         app:backgroundTintMode="src_over">
 
-        <Switch
-            android:id="@+id/switch2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
             android:layout_weight="1"
-            android:fontFamily="@font/poppins_medium"
-            android:text="SMS Alerts!"
-            android:textColor="@color/dark_blue"
-            android:textSize="20sp" />
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sms_title"
+                android:textColor="@color/dark_blue"
+                android:textSize="30sp"
+                app:fontFamily="@font/poppins_semibold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sms_subtitle"
+                android:textColor="@color/ico_gray"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="193dp"
+            android:layout_height="89dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@illustrator"
+            app:srcCompat="@drawable/ic_call"
+            tools:ignore="ImageContrastCheck" />
     </LinearLayout>
+
     <!--<LinearLayout
             android:id="@+id/topBar"
             android:layout_width="match_parent"
@@ -102,9 +133,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cover"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        android:text="Contact to send SOS "
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Numbers "
+        android:fontFamily="@font/poppins_semibold"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
         tools:ignore="HardcodedText" />
 
 

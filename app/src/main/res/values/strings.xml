@@ -13,6 +13,9 @@
     <string name="alert_title">Denger Alert!</string>
     <string name="alert_text">Are you in danger? Please press the call button.</string>
 
+    <string name="sms_title">SMS Contacts!</string>
+    <string name="sms_subtitle">SMS will be send to following numbers with your location.</string>
+
     <array name="lawsBig">
 
         <item>According to the International Research Centre for Women, almost 47 percent of girls
