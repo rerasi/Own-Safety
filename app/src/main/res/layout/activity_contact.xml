@@ -179,14 +179,14 @@
 
     <ImageView
         android:id="@+id/editCallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomLayout"
         android:layout_alignTop="@id/callingInfo"
         android:layout_alignBottom="@id/callingInfo"
-        android:layout_width="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_above="@id/bottomLayout"
         android:layout_alignParentEnd="true"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_edit_24"/>
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_baseline_edit_24" />
 
     <RelativeLayout
         android:layout_margin="20dp"
@@ -198,12 +198,12 @@
 
 
         <EditText
+            android:id="@+id/contactGet"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:hint="Number"
             android:layout_alignTop="@id/addContact"
             android:layout_marginEnd="10dp"
-            android:id="@+id/contactGet"/>
+            android:hint="Number" />
 
 
         <Button

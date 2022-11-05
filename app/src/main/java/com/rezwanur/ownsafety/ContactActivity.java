@@ -75,7 +75,7 @@ public class ContactActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         String numberText = number.getText().toString();
-                        if(numberText.length() == 10){
+                        if(numberText.length() == 11){
                             SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref",MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
                             editor.putString("firstNumber",numberText);
