@@ -15,7 +15,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/pecita"
         android:text="@string/app_name"
-        android:textColor="#00563B"
+        android:textColor="@color/blue"
         android:textSize="46sp" />
 
     <LinearLayout
@@ -26,7 +26,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/banner_bg_3"
+        android:background="@drawable/banner_bg"
         app:backgroundTint="@color/gray"
         app:backgroundTintMode="src_over">
 
@@ -69,7 +69,7 @@
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:contentDescription="@illustrator"
-            app:srcCompat="@drawable/banner"
+            app:srcCompat="@drawable/banner_img"
             tools:ignore="ImageContrastCheck" />
     </LinearLayout>
 

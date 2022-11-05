@@ -1,25 +1,25 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="343dp"
-    android:height="168dp"
+    android:height="80dp"
     android:viewportWidth="343"
-    android:viewportHeight="168">
+    android:viewportHeight="80">
   <group>
     <clip-path
-        android:pathData="M24,0L319,0A24,24 0,0 1,343 24L343,144A24,24 0,0 1,319 168L24,168A24,24 0,0 1,0 144L0,24A24,24 0,0 1,24 0z"/>
+        android:pathData="M0,0h343v80h-343z"/>
     <path
-        android:pathData="M24,0L319,0A24,24 0,0 1,343 24L343,144A24,24 0,0 1,319 168L24,168A24,24 0,0 1,0 144L0,24A24,24 0,0 1,24 0z"
+        android:pathData="M16,0L327,0A16,16 0,0 1,343 16L343,64A16,16 0,0 1,327 80L16,80A16,16 0,0 1,0 64L0,16A16,16 0,0 1,16 0z"
         android:fillColor="#E4F1FB"/>
     <path
-        android:pathData="M28,9L315,9A19,19 0,0 1,334 28L334,140A19,19 0,0 1,315 159L28,159A19,19 0,0 1,9 140L9,28A19,19 0,0 1,28 9z"
+        android:pathData="M20,9L323,9A11,11 0,0 1,334 20L334,60A11,11 0,0 1,323 71L20,71A11,11 0,0 1,9 60L9,20A11,11 0,0 1,20 9z"
         android:strokeWidth="2"
         android:fillColor="#00000000">
       <aapt:attr name="android:strokeColor">
         <gradient 
             android:startX="53.5"
-            android:startY="23.47"
-            android:endX="105.89"
-            android:endY="178.56"
+            android:startY="14.51"
+            android:endX="63.64"
+            android:endY="85.82"
             android:type="linear">
           <item android:offset="0" android:color="#FF606CDA"/>
           <item android:offset="0.31" android:color="#FF5CECC8"/>

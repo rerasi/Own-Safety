@@ -7,67 +7,66 @@
     android:background="@color/white"
     tools:context=".ContactActivity">
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-        <!--<LinearLayout
-            android:id="@+id/topBar"
-            android:layout_width="match_parent"
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="50dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Emergency Contacts :" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:text="Police : 100" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:text="Ambulance : 101" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:text="Fire brigade : 102" />
-        </LinearLayout>-->
+            android:layout_weight="1"
+            app:elevation="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:backgroundTint="@color/blue"
+            app:srcCompat="@drawable/ic_left"
+            app:tint="@color/white" />
 
         <TextView
             android:id="@+id/contactText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="50dp"
-            android:text="Contact to send SOS "
-            tools:ignore="HardcodedText" />
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/function_1"
+            android:textColor="@color/dark_blue"
+            android:textSize="24sp" />
+    </LinearLayout>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/header"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/sms_bg"
+        android:orientation="vertical"
+        app:backgroundTint="@color/gray"
+        app:backgroundTintMode="src_over">
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
-            app:icon="@drawable/ic_left" />
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/callingInfo"
-        android:layout_centerVertical="true">
-
-        <!--<LinearLayout
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:text="SMS Alerts!"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!--<LinearLayout
             android:id="@+id/topBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,14 +97,15 @@
                 android:text="Fire brigade : 102" />
         </LinearLayout>-->
 
-        <TextView
-            android:id="@+id/contactText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="50dp"
-            android:text="Contact to send SOS "
-            tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/contactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cover"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Contact to send SOS "
+        tools:ignore="HardcodedText" />
 
 
         <androidx.recyclerview.widget.RecyclerView
@@ -115,9 +115,6 @@
             android:layout_below="@id/contactText"
             android:layout_marginHorizontal="50dp"
             android:layout_marginTop="10dp" />
-
-
-    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/callingInfo"
@@ -183,8 +180,6 @@
             android:text="Add"/>
 
     </RelativeLayout>
-
-
 
 
 </RelativeLayout>
