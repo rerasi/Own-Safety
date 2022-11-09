@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/alert_bg</item>
+        <item name="colorPrimaryDark">@color/alert_bg</item>
+        <item name="colorAccent">@color/alert_bg</item>
+    </style>
+
+</resources>
