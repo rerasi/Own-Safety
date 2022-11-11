@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +35,7 @@ public class ContactActivity extends AppCompatActivity {
     ContactsAdapter adapter;
     MyOnClickListener onClickListener;
 
-    ImageView edit;
+    Button edit;
 
     TextView callerInfo;
 
@@ -157,7 +156,7 @@ public class ContactActivity extends AppCompatActivity {
         String firstNumber = sharedPreferences.getString("firstNumber","null");
 
         if (firstNumber.isEmpty()||firstNumber.equalsIgnoreCase("null")){
-            callerInfo.setText("Please add number.");
+            callerInfo.setText("01XXXXXXXXX");
         }else {
             callerInfo.setText(firstNumber);
         }

@@ -8,10 +8,10 @@
     tools:context=".SplashActivity">
 
     <TextView
-        android:id="@+id/sparkText"
+        android:id="@+id/app_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/sparkImg"
+        android:layout_above="@id/splashImg"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/pecita"
         android:text="Own Safety"
@@ -20,7 +20,7 @@
         tools:ignore="HardcodedText" />
 
     <ImageView
-        android:id="@+id/sparkImg"
+        android:id="@+id/splashImg"
         android:layout_width="match_parent"
         android:layout_height="653dp"
         android:layout_centerInParent="true"
@@ -33,7 +33,7 @@
         android:id="@+id/btnGetStarted"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sparkImg"
+        android:layout_below="@id/splashImg"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="60dp"
         android:layout_marginTop="60dp"
