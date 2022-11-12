@@ -8,46 +8,55 @@
     tools:context=".ContactActivity"
     tools:ignore="HardcodedText, RtlHardcoded">
 
-
-
-    <LinearLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:fontFamily="@font/pecita"
+        android:text="@string/app_name"
+        android:textColor="@color/blue"
+        android:textSize="46sp" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:elevation="0dp"
-            android:clickable="true"
-            android:focusable="true"
-            app:backgroundTint="@color/blue"
-            app:srcCompat="@drawable/ic_left"
-            app:tint="@color/white" />
+<!--    <LinearLayout-->
+<!--        android:id="@+id/header"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center_vertical">-->
 
-        <TextView
-            android:id="@+id/contactText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="@string/function_1"
-            android:textColor="@color/dark_blue"
-            android:textSize="24sp" />
-    </LinearLayout>
+<!--&lt;!&ndash;        <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/floatingActionButton"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:elevation="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:clickable="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:focusable="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:backgroundTint="@color/blue"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:srcCompat="@drawable/ic_left"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:tint="@color/white" />&ndash;&gt;-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/contactText2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:fontFamily="@font/poppins_medium"-->
+<!--            android:text="@string/function_1"-->
+<!--            android:textColor="@color/dark_blue"-->
+<!--            android:textSize="24sp" />-->
+<!--    </LinearLayout>-->
 
     <LinearLayout
         android:id="@+id/cover"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/header"
+        android:layout_below="@id/title"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
