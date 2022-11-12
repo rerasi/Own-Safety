@@ -29,17 +29,17 @@
 <!--        android:orientation="horizontal"-->
 <!--        android:gravity="center_vertical">-->
 
-<!--&lt;!&ndash;        <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
-<!--&lt;!&ndash;            android:id="@+id/floatingActionButton"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
-<!--&lt;!&ndash;            app:elevation="0dp"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:clickable="true"&ndash;&gt;-->
-<!--&lt;!&ndash;            android:focusable="true"&ndash;&gt;-->
-<!--&lt;!&ndash;            app:backgroundTint="@color/blue"&ndash;&gt;-->
-<!--&lt;!&ndash;            app:srcCompat="@drawable/ic_left"&ndash;&gt;-->
-<!--&lt;!&ndash;            app:tint="@color/white" />&ndash;&gt;-->
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+<!--            android:id="@+id/floatingActionButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--           app:elevation="0dp"-->
+<!--            android:clickable="true"-->
+<!--          android:focusable="true"-->
+<!--          app:backgroundTint="@color/blue"-->
+<!--           app:srcCompat="@drawable/ic_left"-->
+<!--           app:tint="@color/white" />-->
 
 <!--        <TextView-->
 <!--            android:id="@+id/contactText2"-->
