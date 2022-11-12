@@ -152,26 +152,26 @@
             android:textSize="20sp" />
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="60dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/callText"
-                android:layout_width="match_parent"
+                android:layout_width="395dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins"
                 android:text=""
-                android:textSize="18sp"
-                android:textColor="@color/dark_blue"/>
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/editCallButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
                 android:text="Add" />
 
         </LinearLayout>
@@ -227,36 +227,56 @@
 
 
     <RelativeLayout
-        android:layout_margin="20dp"
         android:id="@+id/bottomLayout"
-        android:layout_centerHorizontal="true"
+        android:layout_width="580dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
 
 
-        <EditText
-            android:id="@+id/contactGet"
-            android:layout_width="200dp"
+        <!--        <EditText-->
+        <!--            android:id="@+id/contactGet"-->
+        <!--            android:layout_width="380dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignTop="@id/addContact"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:hint="Number"-->
+        <!--            android:inputType="numberDecimal" />-->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/addContact"
-            android:layout_marginEnd="10dp"
-            android:hint="Number"
-            android:inputType="numberDecimal" />
+            android:hint="Enter Mobile Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contactGet"
+                android:layout_width="380dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/addContact"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
             android:id="@+id/addContact"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@id/contactGet"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/filledTextField"
             android:text="Add" />
 
     </RelativeLayout>
-
-
-
 
 
 </RelativeLayout>
