@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -52,9 +53,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if(id == R.id.second) {
             startActivity(new Intent(MainActivity.this, SmsActivity.class));
             MainActivity.this.finish();
-        } else if(id == R.id.third){
-            startActivity(new Intent(MainActivity.this, ContactActivity.class));
-            MainActivity.this.finish();
+//        } else if(id == R.id.third){
+//            startActivity(new Intent(MainActivity.this, ContactActivity.class));
+//            MainActivity.this.finish();
         } else if (id == R.id.panicBtn) {
 
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -81,8 +82,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
 
+        // Call 999//
 
+        Button buttonCall;
+
+        buttonCall = findViewById(R.id.third);
+
+        buttonCall.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                numberCall = "01783289804";
+                if (!numberCall.equalsIgnoreCase("None")) {
+                    Intent intent = new Intent(Intent.ACTION_DIAL);
+                    intent.setData(Uri.parse("tel:"+numberCall));
+                    startActivity(intent);
+                }
+            }
+        });
     }
+
+
+
     void sendMsg(){
         SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref",MODE_PRIVATE);
         Set<String> oldNumbers = sharedPreferences.getStringSet("enumbers", new HashSet<>());
