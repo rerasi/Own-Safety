@@ -6,7 +6,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText" >
 
     <TextView
         android:id="@+id/title"
@@ -29,7 +30,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/banner_bg"
         app:backgroundTint="@color/gray"
-        app:backgroundTintMode="src_over">
+        app:backgroundTintMode="src_over" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -39,7 +40,7 @@
             android:layout_marginBottom="30dp"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:orientation="vertical">
+            android:orientation="vertical" >
 
             <TextView
                 android:id="@+id/textView"
@@ -48,8 +49,7 @@
                 android:text="@string/title"
                 android:textColor="@color/dark_blue"
                 android:textSize="30sp"
-                app:fontFamily="@font/poppins_semibold"
-                tools:ignore="HardcodedText" />
+                app:fontFamily="@font/poppins_semibold" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -58,8 +58,7 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/sub_title"
                 android:textColor="@color/ico_gray"
-                android:textSize="20sp"
-                tools:ignore="HardcodedText" />
+                android:textSize="20sp" />
         </LinearLayout>
 
         <ImageView
@@ -72,22 +71,16 @@
             android:contentDescription="@illustrator"
             app:srcCompat="@drawable/banner_img"
             tools:ignore="ImageContrastCheck" />
+
     </LinearLayout>
 
     <TextView
         android:id="@+id/header"
+        style="@style/styles_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/cover"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Functions"
-        android:textAllCaps="false"
-        android:textColor="@color/dark_blue"
-        android:textSize="22sp"
-        tools:ignore="HardcodedText" />
+        android:text="Functions" />
 
     <Button
         android:id="@+id/first"
