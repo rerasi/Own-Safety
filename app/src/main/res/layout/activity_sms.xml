@@ -9,24 +9,40 @@
     tools:context=".ContactActivity"
     tools:ignore="HardcodedText">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/pecita"
-        android:text="@string/app_name"
-        android:textColor="@color/blue"
-        android:textSize="46sp" />
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/backBtn"
+            style="@style/back_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true" />
+
+        <TextView
+            style="@style/back_btn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emr_back" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/cover"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title"
+        android:layout_below="@id/top"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/banner_bg"
         app:backgroundTint="@color/gray"

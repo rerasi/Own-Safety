@@ -1,5 +1,6 @@
 package com.rezwanur.ownsafety;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -18,6 +19,11 @@ public class SelfDefenseActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_self_defense);
+
+        findViewById(R.id.backBtn).setOnClickListener(view -> {
+            startActivity(new Intent(SelfDefenseActivity.this, MainActivity.class));
+            SelfDefenseActivity.this.finish();
+        });
 
         webView1 = findViewById(R.id.webView1);
 

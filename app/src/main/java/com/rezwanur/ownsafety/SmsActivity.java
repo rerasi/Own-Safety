@@ -39,6 +39,11 @@ public class SmsActivity extends AppCompatActivity {
 
         stop.setOnClickListener(this::stopService);
 
+        findViewById(R.id.backBtn).setOnClickListener(view -> {
+            startActivity(new Intent(SmsActivity.this, MainActivity.class));
+            SmsActivity.this.finish();
+        });
+
     }
 
 

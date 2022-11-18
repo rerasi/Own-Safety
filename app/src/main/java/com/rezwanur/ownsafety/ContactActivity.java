@@ -52,7 +52,10 @@ public class ContactActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
-
+        findViewById(R.id.backBtn).setOnClickListener(view -> {
+            startActivity(new Intent(ContactActivity.this, MainActivity.class));
+            ContactActivity.this.finish();
+        });
 
         edit = findViewById(R.id.editCallButton);
 
