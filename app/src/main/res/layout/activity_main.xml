@@ -102,15 +102,53 @@
         android:text="@string/function_2"
         app:icon="@drawable/ic_add_call" />
 
-    <Button
+<!--    <Button-->
+<!--        android:id="@+id/third1"-->
+<!--        style="@style/styles_btn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:layout_below="@id/third"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="@string/function_3"-->
+<!--        app:icon="@drawable/ic_police" />-->
+
+
+    <LinearLayout
         android:id="@+id/third"
+        android:clickable="true"
+        android:focusable="true"
         style="@style/styles_btn"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_below="@id/second"
-        android:layout_centerHorizontal="true"
-        android:text="@string/function_3"
-        app:icon="@drawable/ic_police" />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/ic_police" />
+
+        <TextView
+            style="@style/emr_btn_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/function_3" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/ic_call_e" />
+
+    </LinearLayout>
+
+
+
+
+
+
 
     <Button
         android:id="@+id/fourth"

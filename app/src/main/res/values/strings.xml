@@ -19,6 +19,25 @@
     <string name="call_title">SOS Contact!</string>
     <string name="call_subtitle">Call will be placed to following number.</string>
 
+
+
+    //Emergency Numbers
+
+    <string name="emr_top">Emergency Numbers</string>
+    <string name="emr_subtitle">Emergency will be send to following numbers with your location.</string>
+    <string name="emr_menu">Contacts</string>
+
+    <string name="emr_contact1">ন্যাশনাল ইমার্জেন্সি সার্ভিস</string>
+        <string name="emr_phone1">999</string>
+    <string name="emr_contact2">নারী ও শিশু নির্যাতন প্রতিরোধ</string>
+        <string name="emr_phone2">10921</string>
+    <string name="emr_contact3">কল সেন্টার</string>
+        <string name="emr_phone3">333</string>
+    <string name="emr_contact4">তথ্য আপা</string>
+        <string name="emr_phone4">10922</string>
+    <string name="emr_contact5">অ্যাম্বুলেন্স</string>
+        <string name="emr_phone5">16263</string>
+
     <array name="lawsBig">
 
         <item>According to the International Research Centre for Women, almost 47 percent of girls

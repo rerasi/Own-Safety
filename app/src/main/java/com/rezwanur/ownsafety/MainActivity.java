@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.View;
-import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -84,9 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Call 999//
 
-        Button buttonCall;
-
-        buttonCall = findViewById(R.id.third);
+        LinearLayout buttonCall = (LinearLayout) findViewById(R.id.third);
 
         buttonCall.setOnClickListener(new View.OnClickListener() {
 
