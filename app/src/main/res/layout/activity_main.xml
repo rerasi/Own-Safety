@@ -102,25 +102,14 @@
         android:text="@string/function_2"
         app:icon="@drawable/ic_add_call" />
 
-<!--    <Button-->
-<!--        android:id="@+id/third1"-->
-<!--        style="@style/styles_btn"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="65dp"-->
-<!--        android:layout_below="@id/third"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:text="@string/function_3"-->
-<!--        app:icon="@drawable/ic_police" />-->
-
-
     <LinearLayout
         android:id="@+id/third"
-        android:clickable="true"
-        android:focusable="true"
         style="@style/styles_btn"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_below="@id/second"
+        android:clickable="true"
+        android:focusable="true"
         android:orientation="horizontal">
 
         <ImageView
@@ -134,6 +123,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginStart="10dp"
             android:text="@string/function_3" />
 
         <ImageView
@@ -143,12 +133,6 @@
             app:srcCompat="@drawable/ic_call_e" />
 
     </LinearLayout>
-
-
-
-
-
-
 
     <Button
         android:id="@+id/fourth"
