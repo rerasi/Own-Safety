@@ -18,9 +18,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OwnSafety">
-        <activity
-            android:name=".back_to_home"
-            android:exported="false" />
         <activity android:name=".SmsActivity" />
         <activity android:name=".MainActivity" />
         <activity
@@ -32,16 +29,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LawDisplayerActivity" />
-        <activity android:name=".LawsActivity" />
+        <activity android:name=".EmergencyActivity" />
         <activity android:name=".ContactActivity" />
         <activity android:name=".SelfDefenseActivity" />
 
         <service android:name=".ServiceMine" />
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

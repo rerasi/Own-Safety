@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         int id = view.getId();
         if (id == R.id.fifth) {
-            startActivity(new Intent(MainActivity.this, LawsActivity.class));
+            startActivity(new Intent(MainActivity.this, EmergencyActivity.class));
             MainActivity.this.finish();
         }else if(id == R.id.first){
             startActivity(new Intent(MainActivity.this, ContactActivity.class));

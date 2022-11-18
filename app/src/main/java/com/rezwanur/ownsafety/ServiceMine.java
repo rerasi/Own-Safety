@@ -159,7 +159,6 @@ public class ServiceMine extends Service {
                     Notification notification = new Notification.Builder(this, "MYID")
                             .setContentTitle("Women Safety")
                             .setContentText("Shake Device to Send SOS")
-                            .setSmallIcon(R.drawable.girlpower)
                             .setContentIntent(pendingIntent)
                             .build();
                     this.startForeground(115, notification);

@@ -7,21 +7,21 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LawsActivity extends AppCompatActivity implements View.OnClickListener {
+public class EmergencyActivity extends AppCompatActivity implements View.OnClickListener {
 
     String numberCall;
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(LawsActivity.this, MainActivity.class));
-        LawsActivity.this.finish();
+        startActivity(new Intent(EmergencyActivity.this, MainActivity.class));
+        EmergencyActivity.this.finish();
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_laws);
+        setContentView(R.layout.activity_emergency);
 
         findViewById(R.id.first).setOnClickListener(this);
         findViewById(R.id.second).setOnClickListener(this);
@@ -30,8 +30,8 @@ public class LawsActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.fifth).setOnClickListener(this);
 
         findViewById(R.id.backBtn).setOnClickListener(view -> {
-            startActivity(new Intent(LawsActivity.this, MainActivity.class));
-            LawsActivity.this.finish();
+            startActivity(new Intent(EmergencyActivity.this, MainActivity.class));
+            EmergencyActivity.this.finish();
         });
     }
 
