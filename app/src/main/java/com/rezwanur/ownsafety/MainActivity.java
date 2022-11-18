@@ -8,7 +8,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.view.View;
-import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -84,22 +83,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // Call 999//
 
-        LinearLayout buttonCall = (LinearLayout) findViewById(R.id.third);
-
-        buttonCall.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                numberCall = "01783289804";
-                if (!numberCall.equalsIgnoreCase("None")) {
-                    Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:"+numberCall));
-                    startActivity(intent);
-                }
-            }
-        });
+        if (id == R.id.third) {
+            numberCall = "01783289804";
+            Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setData(Uri.parse("tel:"+numberCall));
+            startActivity(intent);
+        }
     }
-
 
 
     void sendMsg(){

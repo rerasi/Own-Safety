@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LawsActivity extends AppCompatActivity implements View.OnClickListener {
 
-    String myLocation = "", numberCall;
+    String numberCall;
 
     @Override
     public void onBackPressed() {
@@ -23,52 +23,55 @@ public class LawsActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_laws);
 
+        findViewById(R.id.first).setOnClickListener(this);
+        findViewById(R.id.second).setOnClickListener(this);
+        findViewById(R.id.third).setOnClickListener(this);
+        findViewById(R.id.fourth).setOnClickListener(this);
+        findViewById(R.id.fifth).setOnClickListener(this);
+
         findViewById(R.id.backBtn).setOnClickListener(view -> {
             startActivity(new Intent(LawsActivity.this, MainActivity.class));
             LawsActivity.this.finish();
         });
-
-
-        findViewById(R.id.first).setOnClickListener(view -> {
-            numberCall = "01783289804";
-            Intent intent = new Intent(Intent.ACTION_DIAL);
-            intent.setData(Uri.parse("tel:"+numberCall));
-            startActivity(intent);
-        });
-
-        findViewById(R.id.second).setOnClickListener(view -> {
-            numberCall = "01783289804";
-            Intent intent = new Intent(Intent.ACTION_DIAL);
-            intent.setData(Uri.parse("tel:"+numberCall));
-            startActivity(intent);
-        });
-
-        findViewById(R.id.third).setOnClickListener(view -> {
-            numberCall = "01783289804";
-            Intent intent = new Intent(Intent.ACTION_DIAL);
-            intent.setData(Uri.parse("tel:"+numberCall));
-            startActivity(intent);
-        });
-
-        findViewById(R.id.fourth).setOnClickListener(view -> {
-            numberCall = "01783289804";
-            Intent intent = new Intent(Intent.ACTION_DIAL);
-            intent.setData(Uri.parse("tel:"+numberCall));
-            startActivity(intent);
-        });
-
-        findViewById(R.id.fifth).setOnClickListener(view -> {
-            numberCall = "01783289804";
-            Intent intent = new Intent(Intent.ACTION_DIAL);
-            intent.setData(Uri.parse("tel:"+numberCall));
-            startActivity(intent);
-        });
-
-
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
+        int id = view.getId();
+        if (id == R.id.first) {
+            numberCall = "1";
+            Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setData(Uri.parse("tel:"+numberCall));
+            startActivity(intent);
+        }
+
+        else if (id == R.id.second) {
+            numberCall = "2";
+            Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setData(Uri.parse("tel:"+numberCall));
+            startActivity(intent);
+        }
+
+        else if (id == R.id.third) {
+            numberCall = "3";
+            Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setData(Uri.parse("tel:"+numberCall));
+            startActivity(intent);
+        }
+
+        else if (id == R.id.fourth) {
+            numberCall = "4";
+            Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setData(Uri.parse("tel:"+numberCall));
+            startActivity(intent);
+        }
+
+        else if (id == R.id.fifth) {
+            numberCall = "5";
+            Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setData(Uri.parse("tel:"+numberCall));
+            startActivity(intent);
+        }
 
     }
 }
