@@ -103,8 +103,6 @@ public class ContactActivity extends AppCompatActivity {
         });
 
 
-
-
         callerInfo = findViewById(R.id.callText);
 
 
@@ -159,15 +157,12 @@ public class ContactActivity extends AppCompatActivity {
         String firstNumber = sharedPreferences.getString("firstNumber","null");
 
         if (firstNumber.isEmpty()||firstNumber.equalsIgnoreCase("null")){
-            callerInfo.setText("01XXXXXXXXX");
+            callerInfo.setText("Please add number");
         }else {
             callerInfo.setText(firstNumber);
         }
 
     }
-
-
-
 
     private void deleteItemFromDatabase(int position) {
         SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref",MODE_PRIVATE);

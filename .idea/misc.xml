@@ -43,6 +43,10 @@
         <entry key="app/src/main/res/drawable/ic_sms.xml" value="0.211" />
         <entry key="app/src/main/res/drawable/ic_sms_c.xml" value="0.297" />
         <entry key="app/src/main/res/drawable/ic_splash_img.xml" value="0.245" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_button_1.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_button_2.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_button_3.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_ic_waves_1.xml" value="0.282" />
         <entry key="app/src/main/res/drawable/oval_purple_full.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/purple_background.xml" value="0.2405" />
         <entry key="app/src/main/res/drawable/rectangle_border.xml" value="0.245" />
@@ -59,9 +63,11 @@
         <entry key="app/src/main/res/layout/activity_back_to_home.xml" value="0.3890625" />
         <entry key="app/src/main/res/layout/activity_call.xml" value="0.3890625" />
         <entry key="app/src/main/res/layout/activity_contact.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/activity_emergency.xml" value="0.28072916666666664" />
         <entry key="app/src/main/res/layout/activity_law_displayer.xml" value="0.28072916666666664" />
         <entry key="app/src/main/res/layout/activity_laws.xml" value="0.38177083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3549636803874092" />
+        <entry key="app/src/main/res/layout/activity_on_boarding_three.xml" value="0.27760416666666665" />
         <entry key="app/src/main/res/layout/activity_self_defense.xml" value="0.3890625" />
         <entry key="app/src/main/res/layout/activity_sms.xml" value="0.31936725096194957" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.35878962536023057" />
@@ -71,6 +77,11 @@
         <entry key="app/src/main/res/layout/dialog_sms.xml" value="0.3890625" />
         <entry key="app/src/main/res/layout/floating_menu.xml" value="0.29635416666666664" />
         <entry key="app/src/main/res/layout/law_item.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/onboarding_1.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/onboarding_2.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/onboarding_3.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/onboarding_4.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/slide_item_container.xml" value="0.27760416666666665" />
       </map>
     </option>
   </component>
