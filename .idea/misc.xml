@@ -70,7 +70,7 @@
         <entry key="app/src/main/res/layout/activity_on_boarding_three.xml" value="0.27760416666666665" />
         <entry key="app/src/main/res/layout/activity_self_defense.xml" value="0.3890625" />
         <entry key="app/src/main/res/layout/activity_sms.xml" value="0.31936725096194957" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.35878962536023057" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.16833333333333333" />
         <entry key="app/src/main/res/layout/contact_item.xml" value="0.5" />
         <entry key="app/src/main/res/layout/dialog.xml" value="0.29635416666666664" />
         <entry key="app/src/main/res/layout/dialog_call.xml" value="0.3890625" />
@@ -79,7 +79,7 @@
         <entry key="app/src/main/res/layout/law_item.xml" value="0.3890625" />
         <entry key="app/src/main/res/layout/onboarding_1.xml" value="0.27760416666666665" />
         <entry key="app/src/main/res/layout/onboarding_2.xml" value="0.27760416666666665" />
-        <entry key="app/src/main/res/layout/onboarding_3.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/onboarding_3.xml" value="0.1" />
         <entry key="app/src/main/res/layout/onboarding_4.xml" value="0.27760416666666665" />
         <entry key="app/src/main/res/layout/slide_item_container.xml" value="0.27760416666666665" />
       </map>
