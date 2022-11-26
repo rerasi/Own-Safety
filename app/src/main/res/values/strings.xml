@@ -37,6 +37,13 @@
     <string name="emr_contact5">অ্যাম্বুলেন্স</string>
     <string name="emr_phone5">16263</string>
 
+    <string name="onb_subtitle">Safety in your Hand</string>
+    <string name="onb_title_2">SOS Alert</string>
+    <string name="onb_subtitle_2">During an emergency, call your emergency contact and SMS the location.</string>
+
+    <string name="onb_title_3">Safe Shake</string>
+    <string name="onb_subtitle_3">If you are in danger, you can shake your phone rapidly to send an SOS alert to specific contacts.</string>
+
 
     <string name="demo_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
     <string name="demo_title">Lorem Ipsum</string>

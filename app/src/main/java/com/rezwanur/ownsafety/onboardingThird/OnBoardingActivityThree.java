@@ -1,7 +1,9 @@
 package com.rezwanur.ownsafety.onboardingThird;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
@@ -31,6 +33,27 @@ import com.rezwanur.ownsafety.R;
 import java.util.List;
 
 public class OnBoardingActivityThree extends AppCompatActivity {
+
+    String prevStarted = "yes";
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences sharedpreferences = getSharedPreferences(getString(R.string.app_name), Context.MODE_PRIVATE);
+        if (!sharedpreferences.getBoolean(prevStarted, false)) {
+            SharedPreferences.Editor editor = sharedpreferences.edit();
+            editor.putBoolean(prevStarted, Boolean.TRUE);
+            editor.apply();
+        } else {
+            moveToSecondary();
+        }
+    }
+
+    public void moveToSecondary(){
+        // use an intent to travel from one activity to another.
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+
 
     private ViewPager viewPager;
     OnBoardingAdapter onboardingAdapter;

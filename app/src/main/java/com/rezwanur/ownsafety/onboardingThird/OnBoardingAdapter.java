@@ -17,8 +17,7 @@ public class OnBoardingAdapter extends PagerAdapter {
     private int[] layouts = {
             R.layout.onboarding_1,
             R.layout.onboarding_2,
-            R.layout.onboarding_3,
-            R.layout.onboarding_4
+            R.layout.onboarding_3
     };
 
     public OnBoardingAdapter(Context context) {
