@@ -62,7 +62,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Configure SMS"
+                android:text="@string/function_2"
                 android:textColor="@color/dark_blue"
                 android:textSize="30sp"
                 app:fontFamily="@font/poppins_semibold"
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/sms_subtitle"
+                android:text="@string/conf_subtitle"
                 android:textColor="@color/ico_gray"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText" />
@@ -97,7 +97,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/cover"
-        android:text="Send SOS in Emergency" />
+        android:text="@string/conf_menu" />
 
     <LinearLayout
         android:id="@+id/li"
@@ -116,7 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:background="@drawable/rounder_corner_2"
-            android:text="Start SMS Alerts"
+            android:text="@string/conf_btn1"
             app:fontFamily="@font/poppins_semibold"
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -132,7 +132,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:background="@drawable/rounder_corner_2"
-            android:text="Stop SMS Alerts"
+            android:text="@string/conf_btn2"
             app:fontFamily="@font/poppins_semibold"
             android:textSize="20sp"
             app:backgroundTint="@color/red" />

@@ -72,7 +72,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/onboarding_activity_button_4"
+        android:background="@drawable/onb_btn"
         android:fontFamily="@font/poppins_semibold"
         android:onClick="lastPage"
         android:text="@string/last"

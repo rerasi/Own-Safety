@@ -14,18 +14,6 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.1" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView4"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:contentDescription="TODO"-->
-<!--        android:scaleType="centerCrop"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/guideline6"-->
-<!--        app:srcCompat="@drawable/onboarding_activity_ic_waves_2" />-->
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="425dp"
@@ -83,7 +71,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/onboarding_activity_button_2"
+        android:background="@drawable/onb_btn"
         android:fontFamily="@font/poppins_semibold"
         android:onClick="nextPage"
         android:text="Next"

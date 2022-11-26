@@ -60,7 +60,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Self Defence Videos"
+                android:text="@string/sdv_title"
                 android:textColor="@color/dark_blue"
                 android:textSize="30sp"
                 app:fontFamily="@font/poppins_semibold" />
@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/sms_subtitle"
+                android:text="@string/sdv_subtitle"
                 android:textColor="@color/ico_gray"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 style="@style/styles_subtitle"
-                android:text="1. This is Self Video" />
+                android:text="1. 7 Self-Defense Techniques for Women from Professionals" />
 
             <WebView
                 android:id="@+id/webView1"
@@ -122,7 +122,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/styles_subtitle"
-                android:text="1. This is Self Video" />
+                android:text="2. Self Defense Moves Every Woman Should Know" />
 
             <WebView
                 android:id="@+id/webView2"
@@ -133,7 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/styles_subtitle"
-                android:text="1. This is Self Video" />
+                android:text="3. 30 Easy Self-Defense Tips that may Save Your Life One Day" />
 
             <WebView
                 android:id="@+id/webView3"
@@ -144,7 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/styles_subtitle"
-                android:text="1. This is Self Video" />
+                android:text="4. Self-Defense Techniques for Women || 5-Minute Recovery Tips for Different Situations!" />
 
             <WebView
                 android:id="@+id/webView4"
@@ -155,7 +155,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/styles_subtitle"
-                android:text="1. This is Self Video" />
+                android:text="5. How to Avoid an Attack If You're Being Followed or Watched" />
 
             <WebView
                 android:id="@+id/webView5"

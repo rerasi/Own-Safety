@@ -1,54 +1,59 @@
 <resources>
     <string name="app_name">Own Safety</string>
 
+    //Configure SMS
     <string name="title">Safety in Hand!</string>
-    <string name="sub_title">It is a long established into fact that a reader will be distracted by this.</string>
+    <string name="sub_title">"Own Safety" app acts like a sentinel following you until you feel safe.</string>
 
     <string name="function_1">Add Contact SMS</string>
     <string name="function_2">Configure SMS</string>
     <string name="function_3">Call 999</string>
-    <string name="function_4">Self Defence</string>
+    <string name="function_4">Self Defense</string>
     <string name="function_5">Emergency Numbers</string>
 
     <string name="alert_title">Denger Alert!</string>
     <string name="alert_text">Are you in danger? Please press the call button.</string>
 
+    //Manage Contacts
     <string name="sms_title">Manage Contacts!</string>
-    <string name="sms_subtitle">SMS will be send to following numbers with your location.</string>
+    <string name="sms_subtitle">The following numbers will receive an SMS with your location and place a call.</string>
 
-    <string name="call_title">SOS Contact!</string>
-    <string name="call_subtitle">Call will be placed to following number.</string>
+    //Configure SMS
+    <string name="conf_menu">SMS Alert Configure</string>
+    <string name="conf_subtitle">Here you can configure your SMS service and turn on/off the shaking service.</string>
+    <string name="conf_btn1">Start SMS Alert</string>
+    <string name="conf_btn2">Stop SMS Alert</string>
+
+    //Self Defense Videos
+    <string name="sdv_title">Self Defense Videos</string>
+    <string name="sdv_subtitle">These tutorial videos will help you to learn self defense.</string>
 
 
     //Emergency Numbers
-
     <string name="emr_back">Back to Home</string>
-    <string name="emr_subtitle">Emergency will be send to following numbers with your location.</string>
+    <string name="emr_subtitle">Following is a list of emergency numbers where you can get assistance.</string>
     <string name="emr_menu">Contacts</string>
 
     <string name="emr_contact1">ন্যাশনাল ইমার্জেন্সি সার্ভিস</string>
     <string name="emr_phone1">999</string>
     <string name="emr_contact2">নারী ও শিশু নির্যাতন প্রতিরোধ</string>
     <string name="emr_phone2">10921</string>
-    <string name="emr_contact3">কল সেন্টার</string>
+    <string name="emr_contact3">হেল্পলাইন</string>
     <string name="emr_phone3">333</string>
     <string name="emr_contact4">তথ্য আপা</string>
     <string name="emr_phone4">10922</string>
     <string name="emr_contact5">অ্যাম্বুলেন্স</string>
     <string name="emr_phone5">16263</string>
 
-    <string name="onb_subtitle">Safety in your Hand</string>
+
+    //Onboarding Text
+
+    <string name="onb_subtitle">The key to safety is in your hands</string>
     <string name="onb_title_2">SOS Alert</string>
     <string name="onb_subtitle_2">During an emergency, call your emergency contact and SMS the location.</string>
 
     <string name="onb_title_3">Safe Shake</string>
     <string name="onb_subtitle_3">If you are in danger, you can shake your phone rapidly to send an SOS alert to specific contacts.</string>
-
-
-    <string name="demo_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
-    <string name="demo_title">Lorem Ipsum</string>
-    <string name="walkthrough">Examples of <b> walkthrough/onboarding/first-time users </b> screen in android studio</string>
-
 
     <string name="title_activity_header">header</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -63,6 +68,7 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_nav_header">nav_header</string>
     <string name="title_activity_call">CallActivity</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

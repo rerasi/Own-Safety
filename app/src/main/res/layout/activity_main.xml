@@ -90,7 +90,7 @@
         android:layout_below="@id/header"
         android:layout_centerHorizontal="true"
         android:text="@string/function_1"
-        app:icon="@drawable/ic_sms" />
+        app:icon="@drawable/ic_add_call" />
 
     <Button
         android:id="@+id/second"
@@ -100,7 +100,7 @@
         android:layout_below="@id/first"
         android:layout_centerHorizontal="true"
         android:text="@string/function_2"
-        app:icon="@drawable/ic_add_call" />
+        app:icon="@drawable/ic_sms" />
 
     <LinearLayout
         android:id="@+id/third"
