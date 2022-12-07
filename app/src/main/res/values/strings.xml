@@ -5,7 +5,7 @@
     <string name="title">Safety in Hand!</string>
     <string name="sub_title">"Own Safety" app acts like a sentinel following you until you feel safe.</string>
 
-    <string name="function_1">Add Contact SMS</string>
+    <string name="function_1">Add Emergency Contact</string>
     <string name="function_2">Configure SMS</string>
     <string name="function_3">Call 999</string>
     <string name="function_4">Self Defense</string>
@@ -15,7 +15,7 @@
     <string name="alert_text">Are you in danger? Please press the call button.</string>
 
     //Manage Contacts
-    <string name="sms_title">Manage Contacts!</string>
+    <string name="sms_title">Emergency Contacts!</string>
     <string name="sms_subtitle">The following numbers will receive an SMS with your location and place a call.</string>
 
     //Configure SMS

@@ -160,9 +160,10 @@
         android:layout_height="162dp"
         android:layout_below="@id/fifth"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/alert_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:backgroundTint="@color/alert_bg"
         app:backgroundTintMode="src_in">
 
