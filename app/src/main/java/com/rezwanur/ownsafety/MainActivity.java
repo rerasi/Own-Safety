@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Call 999//
 
         if (id == R.id.third) {
-            numberCall = "01783289804";
+            numberCall = "111";
             Intent intent = new Intent(Intent.ACTION_CALL);
             intent.setData(Uri.parse("tel:"+numberCall));
             startActivity(intent);
