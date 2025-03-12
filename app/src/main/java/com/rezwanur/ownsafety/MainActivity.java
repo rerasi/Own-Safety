@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if(id == R.id.second) {
             startActivity(new Intent(MainActivity.this, SmsActivity.class));
             MainActivity.this.finish();
-//        } else if(id == R.id.third){
-//            startActivity(new Intent(MainActivity.this, ContactActivity.class));
-//            MainActivity.this.finish();
+        } else if(id == R.id.third){
+            startActivity(new Intent(MainActivity.this, ContactActivity.class));
+            MainActivity.this.finish();
         } else if (id == R.id.panicBtn) {
 
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
