@@ -1,5 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-mdpi/banner_bg.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable-mdpi/call_btn.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable-mdpi/sms_bg.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable-v24/law_image.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/btn_border.xml" value="0.245" />
+        <entry key="app/src/main/res/drawable/button.xml" value="0.3" />
+        <entry key="app/src/main/res/drawable/button_border.xml" value="0.2105" />
+        <entry key="app/src/main/res/drawable/contact.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/ic_add.xml" value="0.3" />
+        <entry key="app/src/main/res/drawable/ic_add_call.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/ic_banner_bg_2.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.211" />
+        <entry key="app/src/main/res/drawable/ic_baseline_message_24.xml" value="0.231" />
+        <entry key="app/src/main/res/drawable/ic_bg.xml" value="0.231" />
+        <entry key="app/src/main/res/drawable/ic_call.xml" value="0.211" />
+        <entry key="app/src/main/res/drawable/ic_call_c.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/ic_call_e.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/ic_chat.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/ic_contact.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/ic_emergency.xml" value="0.211" />
+        <entry key="app/src/main/res/drawable/ic_emergency_c.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/ic_girl.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.231" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.211" />
+        <entry key="app/src/main/res/drawable/ic_law.xml" value="0.336" />
+        <entry key="app/src/main/res/drawable/ic_left.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/ic_onboarding_1.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/ic_outline_chat_24.xml" value="0.231" />
+        <entry key="app/src/main/res/drawable/ic_outline_gavel_24.xml" value="0.231" />
+        <entry key="app/src/main/res/drawable/ic_outline_perm_contact_calendar_24.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/ic_police.xml" value="0.211" />
+        <entry key="app/src/main/res/drawable/ic_remove.xml" value="0.3" />
+        <entry key="app/src/main/res/drawable/ic_self_defence.xml" value="0.211" />
+        <entry key="app/src/main/res/drawable/ic_self_defense_c.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/ic_sms.xml" value="0.211" />
+        <entry key="app/src/main/res/drawable/ic_sms_c.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/ic_splash_img.xml" value="0.245" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_button_1.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_button_2.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_button_3.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_button_4.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_ic_image_1.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_ic_image_2.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_ic_image_3.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_ic_image_4.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_ic_waves_1.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_ic_waves_2.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_ic_waves_3.xml" value="0.297" />
+        <entry key="app/src/main/res/drawable/onboarding_activity_ic_waves_4.xml" value="0.282" />
+        <entry key="app/src/main/res/drawable/onboarding_indicator_active.xml" value="0.123" />
+        <entry key="app/src/main/res/drawable/onboarding_indicator_inactive.xml" value="0.123" />
+        <entry key="app/src/main/res/drawable/oval_purple_full.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/purple_background.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/rectangle_border.xml" value="0.245" />
+        <entry key="app/src/main/res/drawable/rounded_corner.xml" value="0.285" />
+        <entry key="app/src/main/res/drawable/rounded_corner1.xml" value="0.245" />
+        <entry key="app/src/main/res/drawable/rounder_corner_2.xml" value="0.279" />
+        <entry key="app/src/main/res/drawable/self_defence.xml" value="0.3" />
+        <entry key="app/src/main/res/drawable/settings.xml" value="0.2405" />
+        <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.245" />
+        <entry key="app/src/main/res/drawable/top_left_corner_oval.xml" value="0.2405" />
+        <entry key="app/src/main/res/font/Pecita.xml" value="0.3433091064557503" />
+        <entry key="app/src/main/res/font/courgette.xml" value="0.34416417272338606" />
+        <entry key="app/src/main/res/layout-v28/activity_main.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/activity_back_to_home.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/activity_call.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/activity_contact.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/activity_emergency.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/activity_law_displayer.xml" value="0.28072916666666664" />
+        <entry key="app/src/main/res/layout/activity_laws.xml" value="0.38177083333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3549636803874092" />
+        <entry key="app/src/main/res/layout/activity_on_boarding_design_one.xml" value="0.15166666666666667" />
+        <entry key="app/src/main/res/layout/activity_on_boarding_three.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/activity_self_defense.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/activity_sms.xml" value="0.31936725096194957" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.16833333333333333" />
+        <entry key="app/src/main/res/layout/contact_item.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/dialog.xml" value="0.29635416666666664" />
+        <entry key="app/src/main/res/layout/dialog_call.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/dialog_sms.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/floating_menu.xml" value="0.29635416666666664" />
+        <entry key="app/src/main/res/layout/item_container_boarding_one.xml" value="0.15166666666666667" />
+        <entry key="app/src/main/res/layout/law_item.xml" value="0.3890625" />
+        <entry key="app/src/main/res/layout/onboarding_1.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/onboarding_2.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/onboarding_3.xml" value="0.2734375" />
+        <entry key="app/src/main/res/layout/onboarding_4.xml" value="0.27760416666666665" />
+        <entry key="app/src/main/res/layout/slide_item_container.xml" value="0.27760416666666665" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK" />
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2953125" />
+      </ProjectState>
+    </option>
+  </component>
 </project>

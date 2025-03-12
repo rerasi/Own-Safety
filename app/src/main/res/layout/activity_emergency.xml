@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyActivity"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/backBtn"
+            style="@style/back_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true" />
+
+        <TextView
+            style="@style/back_btn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emr_back" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/banner_bg"
+        app:backgroundTint="@color/gray"
+        app:backgroundTintMode="src_over">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/function_5"
+                android:textColor="@color/dark_blue"
+                android:textSize="30sp"
+                app:fontFamily="@font/poppins_semibold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/emr_subtitle"
+                android:textColor="@color/ico_gray"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="193dp"
+            android:layout_height="89dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@illustrator"
+            app:srcCompat="@drawable/ic_emergency_c"
+            tools:ignore="ImageContrastCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/styles_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cover"
+        android:text="@string/emr_menu" />
+
+    <LinearLayout
+        android:id="@+id/first"
+        style="@style/styles_btn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/header"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/emr_btn_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/emr_contact1" />
+
+        <TextView
+            style="@style/emr_btn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/emr_phone1" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/ic_call_e" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        style="@style/styles_btn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/first"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/emr_btn_txt"
+            android:text="@string/emr_contact2"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/emr_btn_txt"
+            android:layout_marginEnd="20dp"
+            android:text="@string/emr_phone2" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/ic_call_e" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third"
+        style="@style/styles_btn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/second"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/emr_btn_txt"
+            android:text="@string/emr_contact3"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/emr_btn_txt"
+            android:layout_marginEnd="20dp"
+            android:text="@string/emr_phone3" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/ic_call_e" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourth"
+        style="@style/styles_btn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/third"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/emr_btn_txt"
+            android:text="@string/emr_contact4"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/emr_btn_txt"
+            android:layout_marginEnd="20dp"
+            android:text="@string/emr_phone4" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/ic_call_e" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fifth"
+        style="@style/styles_btn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/fourth"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/emr_btn_txt"
+            android:text="@string/emr_contact5"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/emr_btn_txt"
+            android:layout_marginEnd="20dp"
+            android:text="@string/emr_phone5" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/ic_call_e" />
+
+    </LinearLayout>
+
+</RelativeLayout>

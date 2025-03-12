@@ -4,137 +4,206 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactActivity">
-
-    <View
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/top_left_corner_oval"/>
-
-    <RelativeLayout
-        android:layout_above="@id/callingInfo"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    android:background="@color/white"
+    tools:context=".ContactActivity"
+    tools:ignore="HardcodedText, RtlHardcoded">
 
     <LinearLayout
-        android:id="@+id/topBar"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="50dp"
+        android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/backBtn"
+            style="@style/back_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true" />
 
         <TextView
+            style="@style/back_btn_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Emergency Contacts :"/>
-
-        <TextView
-            android:layout_marginStart="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Police : 100"/>
-
-        <TextView
-            android:layout_marginStart="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ambulance : 101"/>
-
-        <TextView
-            android:layout_marginStart="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fire brigade : 102"/>
+            android:text="@string/emr_back" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/topBar"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="50dp"
-        android:id="@+id/contactText"
-        android:text="Contact to send SOS "/>
+        android:layout_below="@id/top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/banner_bg"
+        app:backgroundTint="@color/gray"
+        app:backgroundTintMode="src_over">
 
-
-        <androidx.recyclerview.widget.RecyclerView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_height="300dp"
-            android:id="@+id/contacts"
-            android:layout_marginHorizontal="50dp"
-            android:layout_below="@id/contactText"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sms_title"
+                android:textColor="@color/dark_blue"
+                android:textSize="30sp"
+                app:fontFamily="@font/poppins_semibold"
+                tools:ignore="HardcodedText" />
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sms_subtitle"
+                android:textColor="@color/ico_gray"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="193dp"
+            android:layout_height="89dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@illustrator"
+            app:srcCompat="@drawable/ic_call_c"
+            tools:ignore="ImageContrastCheck" />
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/callingInfo"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_above="@id/bottomLayout"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cover"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:foregroundGravity="center"
-        android:layout_toStartOf="@id/callingInfo"
-        android:layout_height="wrap_content">
+        android:orientation="vertical">
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Call will be placed to following number :"/>
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Contact for Call"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp" />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/callText"
-            android:text=""/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/callText"
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text=""
+                android:textColor="@color/dark_blue"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/editCallButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="Add" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/editCallButton"
-        android:layout_alignTop="@id/callingInfo"
-        android:layout_alignBottom="@id/callingInfo"
+
+    <TextView
+        android:id="@+id/contactText"
         android:layout_width="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_above="@id/bottomLayout"
-        android:layout_alignParentEnd="true"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_edit_24"/>
+        android:layout_below="@id/callingInfo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Contacts for SMS"
+        android:textAllCaps="false"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/contactText"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp" />
+
 
     <RelativeLayout
-        android:layout_margin="20dp"
         android:id="@+id/bottomLayout"
-        android:layout_centerHorizontal="true"
+        android:layout_width="580dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp">
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
 
-
-        <EditText
-            android:layout_width="200dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:hint="Number"
-            android:layout_alignTop="@id/addContact"
-            android:layout_marginEnd="10dp"
-            android:id="@+id/contactGet"/>
+            android:hint="Enter Mobile Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contactGet"
+                android:layout_width="342dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@id/addContact"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
             android:id="@+id/addContact"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/contactGet"
-            android:text="Add"/>
+            android:layout_marginLeft="-22dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/filledTextField"
+            android:text="Add" />
 
     </RelativeLayout>
-
-
 
 
 </RelativeLayout>

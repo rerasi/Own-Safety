@@ -1,0 +1,118 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Material3.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/alert_bg</item>
+        <item name="colorPrimaryDark">@color/alert_bg</item>
+        <item name="colorAccent">@color/alert_bg</item>
+    </style>
+
+
+    <style name="styles_btn" parent="button">
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="backgroundTintMode">add</item>
+        <item name="android:gravity">start|center_vertical</item>
+
+        <!-- Style for Margin -->
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+
+        <!-- Style for Padding -->
+        <item name="android:insetLeft">5dp</item>
+        <item name="android:insetTop">8dp</item>
+        <item name="android:insetRight">5dp</item>
+        <item name="android:insetBottom">8dp</item>
+
+        <!-- Style for Text -->
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:textAllCaps">false</item>
+
+        <!-- Style for Icon -->
+        <item name="iconGravity">textStart</item>
+        <item name="iconSize">30dp</item>
+        <item name="iconTint">@color/ico_gray</item>
+
+    </style>
+
+
+    <style name="styles_subtitle" parent="button">
+
+        <!-- Style for Margin -->
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+
+        <!-- Style for Text -->
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+    <style name="style_video" parent="button">
+
+        <!-- Style for Height -->
+        <item name="android:layout_height">250dp</item>
+
+        <!-- Style for Margin -->
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+
+    </style>
+
+    // Back Button //
+
+    <style name="back_btn" parent="button">
+
+        <item name="backgroundTint">@color/blue</item>
+        <item name="elevation">0dp</item>
+        <item name="fabCustomSize">40dp</item>
+        <item name="srcCompat">@drawable/ic_left</item>
+        <item name="tint">@color/white</item>
+        <item name="useCompatPadding">false</item>
+
+    </style>
+
+    <style name="back_btn_txt" parent="button">
+
+        <!-- Style for Margin -->
+        <item name="android:layout_marginStart">10dp</item>
+
+        <!-- Style for Text -->
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+    // Emergency Number //
+
+    <style name="emr_btn_txt" parent="button">
+
+        <!-- Style for Margin -->
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+
+        <!-- Style for Text -->
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:textAllCaps">false</item>
+
+    </style>
+
+
+    <style name="button"></style>
+
+</resources>

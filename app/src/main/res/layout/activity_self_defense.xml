@@ -4,31 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelfDefenseActivity">
+    tools:context=".SelfDefenseActivity"
+    tools:ignore="HardcodedText">
 
-    <View
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/top_left_corner_oval"/>
-
-
-
-        <WebView
-            android:layout_centerInParent="true"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:id="@+id/webView"/>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This video shows some techniques of self defense"
-        android:layout_below="@id/webView"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/backBtn"
+            style="@style/back_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true" />
 
+        <TextView
+            style="@style/back_btn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emr_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/banner_bg"
+        app:backgroundTint="@color/gray"
+        app:backgroundTintMode="src_over">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sdv_title"
+                android:textColor="@color/dark_blue"
+                android:textSize="30sp"
+                app:fontFamily="@font/poppins_semibold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sdv_subtitle"
+                android:textColor="@color/ico_gray"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="193dp"
+            android:layout_height="89dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:contentDescription="@illustrator"
+            app:srcCompat="@drawable/ic_self_defense_c"
+            tools:ignore="ImageContrastCheck" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/cover"
+        android:id="@+id/space" />
+
+    <ScrollView
+        android:layout_below="@id/space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="WebViewLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                style="@style/styles_subtitle"
+                android:text="1. 7 Self-Defense Techniques for Women from Professionals" />
+
+            <WebView
+                android:id="@+id/webView1"
+                android:layout_width="match_parent"
+                style="@style/style_video" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styles_subtitle"
+                android:text="2. Self Defense Moves Every Woman Should Know" />
+
+            <WebView
+                android:id="@+id/webView2"
+                android:layout_width="match_parent"
+                style="@style/style_video" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styles_subtitle"
+                android:text="3. 30 Easy Self-Defense Tips that may Save Your Life One Day" />
+
+            <WebView
+                android:id="@+id/webView3"
+                android:layout_width="match_parent"
+                style="@style/style_video" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styles_subtitle"
+                android:text="4. Self-Defense Techniques for Women || 5-Minute Recovery Tips for Different Situations!" />
+
+            <WebView
+                android:id="@+id/webView4"
+                android:layout_width="match_parent"
+                style="@style/style_video" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/styles_subtitle"
+                android:text="5. How to Avoid an Attack If You're Being Followed or Watched" />
+
+            <WebView
+                android:id="@+id/webView5"
+                android:layout_width="match_parent"
+                style="@style/style_video" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </RelativeLayout>
